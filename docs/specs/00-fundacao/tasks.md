@@ -15,6 +15,8 @@
 - [x] Rodar `pnpm install` na raiz e validar que não há erros
 - [x] Rodar `pnpm --filter backend start:dev` e validar `GET /health`
 - [x] Rodar `pnpm --filter frontend dev` e validar página inicial em `http://localhost:3000`
-- [ ] Criar projeto Supabase (com o usuário) e o usuário único de autenticação — ação manual/assistida
-- [ ] Preencher `.env` reais localmente (nunca commitar) a partir dos `.env.example`
-- [ ] Primeiro commit do scaffold completo
+- [x] Criar projeto Supabase (`controle-financeiro`, sa-east-1, org Fernando Parm3zani) via MCP
+- [x] Preencher `.env`/`.env.local` locais com URL e anon key (nunca commitados)
+- [x] Primeiro commit do scaffold completo
+- [ ] Usuário completar manualmente: copiar `SUPABASE_SERVICE_ROLE_KEY` do painel para `src/backend/.env`
+- [ ] Usuário completar manualmente: criar o usuário único de autenticação (email/senha) no painel Supabase (Authentication > Users)
