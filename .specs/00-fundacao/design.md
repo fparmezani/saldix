@@ -26,7 +26,7 @@ ControleFinanceiro/
     shared-types/              Zod schemas compartilhados (ex: Category)
   docs/
     Multicap/                  material de referência (já existia)
-    specs/                     specs por fase (este arquivo faz parte da Fase 0)
+    .specs/                     specs por fase (este arquivo faz parte da Fase 0)
   .claude/
     CLAUDE.md
     rules/estrutura-pastas.md

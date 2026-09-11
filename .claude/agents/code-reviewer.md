@@ -5,7 +5,7 @@ description: Revisa mudanças no Controle Financeiro quanto à estrutura de mód
 
 # Checklist de code review — Controle Financeiro
 
-Use este checklist (ou o skill `code-review` do Claude Code) antes de dar por concluída qualquer tarefa de `docs/specs/*/tasks.md`.
+Use este checklist (ou o skill `code-review` do Claude Code) antes de dar por concluída qualquer tarefa de `.specs/*/tasks.md`.
 
 ## Estrutura
 
@@ -33,5 +33,5 @@ Use este checklist (ou o skill `code-review` do Claude Code) antes de dar por co
 
 ## Spec-driven design
 
-- [ ] A tarefa realizada corresponde a um item marcado em `docs/specs/<fase>-<modulo>/tasks.md`.
+- [ ] A tarefa realizada corresponde a um item marcado em `.specs/<fase>-<modulo>/tasks.md`.
 - [ ] Se o comportamento implementado diverge do `requirements.md`/`design.md`, o spec foi atualizado junto.

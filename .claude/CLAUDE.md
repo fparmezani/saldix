@@ -32,11 +32,11 @@ Leia antes de programar:
 
 ## Fluxo de trabalho obrigatório
 
-1. Antes de implementar qualquer fase/módulo novo, criar (ou já existir) `docs/specs/<fase>-<modulo>/{requirements,design,tasks}.md`.
+1. Antes de implementar qualquer fase/módulo novo, criar (ou já existir) `.specs/<fase>-<modulo>/{requirements,design,tasks}.md`.
 2. Implementar seguindo `tasks.md`, marcando itens concluídos.
 3. Rodar testes e lint do pacote alterado antes de considerar a tarefa concluída.
 4. Nunca commitar `.env`, chaves do Supabase ou credenciais do usuário único.
 
 ## Plano geral
 
-O plano de fases completo (Fase 0 a Fase 9) está descrito em `docs/specs/` (spec por fase) e foi derivado do vídeo de referência da Multicap. Resumo da ordem: Fundação → Receitas → Despesas → Investir/Visão Geral → Reserva de Emergência → Metas → Investimentos → Patrimônio → Auth/Deploy → Calculadoras (opcional). O módulo "Escola" do vídeo original está **fora de escopo**.
+O plano de fases completo (Fase 0 a Fase 9) está descrito em `.specs/` (spec por fase) e foi derivado do vídeo de referência da Multicap. Resumo da ordem: Fundação → Receitas → Despesas → Investir/Visão Geral → Reserva de Emergência → Metas → Investimentos → Patrimônio → Auth/Deploy → Calculadoras (opcional). O módulo "Escola" do vídeo original está **fora de escopo**.

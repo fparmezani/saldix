@@ -11,7 +11,7 @@
 - [x] Criar estrutura `src/modules/*` e `src/shared/*` do backend (vazias, com `.gitkeep`)
 - [x] Criar `.env.example` em `src/frontend` e `src/backend`
 - [x] Criar pasta `.claude/` com `CLAUDE.md`, `rules/*.md`, `agents/code-reviewer.md`
-- [x] Criar specs desta própria Fase 0 em `docs/specs/00-fundacao/`
+- [x] Criar specs desta própria Fase 0 em `.specs/00-fundacao/`
 - [x] Rodar `pnpm install` na raiz e validar que não há erros
 - [x] Rodar `pnpm --filter backend start:dev` e validar `GET /health`
 - [x] Rodar `pnpm --filter frontend dev` e validar página inicial em `http://localhost:3000`

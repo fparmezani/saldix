@@ -14,7 +14,7 @@ packages/
   shared-types/   DTOs, enums e schemas Zod usados por frontend e backend
 docs/
   Multicap/   material de referência do vídeo (não editar)
-  specs/      spec-driven design por fase/módulo (obrigatório antes de codar)
+  .specs/      spec-driven design por fase/módulo (obrigatório antes de codar)
 ```
 
 ## Frontend (`src/frontend/src`)
@@ -84,7 +84,7 @@ modules/<nome>/
 
 ## Spec-driven design (obrigatório)
 
-Antes de implementar qualquer módulo, deve existir `docs/specs/<fase>-<modulo>/`:
+Antes de implementar qualquer módulo, deve existir `.specs/<fase>-<modulo>/`:
 
 - `requirements.md` — user stories + critérios de aceite.
 - `design.md` — schema de tabelas, endpoints, componentes de tela, padrões de projeto usados.
