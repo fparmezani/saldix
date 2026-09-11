@@ -1,0 +1,20 @@
+# Fase 0 — Fundação do projeto — Tasks
+
+- [x] Inicializar repositório git
+- [x] Instalar pnpm globalmente
+- [x] Criar `pnpm-workspace.yaml` e `package.json` raiz com scripts
+- [x] Criar `.gitignore` e `.prettierrc.json`
+- [x] Criar `packages/shared-types` com schema Zod de exemplo (`Category`)
+- [x] Scaffold do frontend Next.js (`src/frontend`) com App Router, Tailwind, TanStack Query
+- [x] Criar estrutura `src/modules/*` e `src/shared/*` do frontend (vazias, com `.gitkeep`)
+- [x] Scaffold do backend NestJS (`src/backend`) com `main.ts`, `app.module.ts`, health-check
+- [x] Criar estrutura `src/modules/*` e `src/shared/*` do backend (vazias, com `.gitkeep`)
+- [x] Criar `.env.example` em `src/frontend` e `src/backend`
+- [x] Criar pasta `.claude/` com `CLAUDE.md`, `rules/*.md`, `agents/code-reviewer.md`
+- [x] Criar specs desta própria Fase 0 em `docs/specs/00-fundacao/`
+- [x] Rodar `pnpm install` na raiz e validar que não há erros
+- [x] Rodar `pnpm --filter backend start:dev` e validar `GET /health`
+- [x] Rodar `pnpm --filter frontend dev` e validar página inicial em `http://localhost:3000`
+- [ ] Criar projeto Supabase (com o usuário) e o usuário único de autenticação — ação manual/assistida
+- [ ] Preencher `.env` reais localmente (nunca commitar) a partir dos `.env.example`
+- [ ] Primeiro commit do scaffold completo
