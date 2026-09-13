@@ -13,6 +13,9 @@ Referência: vídeo Multicap (`docs/Multicap/Tanscript.txt`, screenshots do bloc
 5. Como usuário, quero poder reagendar a data de um recebimento futuro não confirmado, para casos em que a pessoa atrasa o pagamento.
 6. Como usuário, quero navegar entre meses (anterior/próximo) na tela de Orçamento, para ver/cadastrar receitas de qualquer período.
 7. Como usuário, quero ver um gráfico de pizza/rosca com a % de cada tipo de renda (principal vs. extra) sobre o total do mês.
+8. Como usuário, quero cadastrar uma renda como **recorrente**, informando um dia fixo do mês (ex: dia 5) e o valor, para não precisar lançar manualmente todo mês.
+9. Como usuário que recebe uma mesma fonte de renda em mais de uma parcela por mês (ex: 2x por mês, dias 1 e 15), quero poder cadastrar duas rendas recorrentes separadas (uma por dia), para que cada uma seja lançada corretamente sem depender de datas absolutas que possam "vazar" para o mês seguinte.
+10. Como usuário, quero poder desativar uma renda recorrente (sem apagar o histórico já gerado), para parar de receber uma fonte de renda que acabou.
 
 ## Critérios de aceite
 
@@ -24,6 +27,10 @@ Referência: vídeo Multicap (`docs/Multicap/Tanscript.txt`, screenshots do bloc
 - Dado um recebimento futuro pendente, quando eu altero a data prevista, então ele passa a aparecer no novo mês, mantendo o status "pendente".
 - Dado que estou no mês de setembro, quando eu clico em "próximo mês", então a tela mostra os dados de outubro (vazios se nada cadastrado).
 - Nenhuma renda deve ser visível para outro usuário além do autenticado (RLS por `user_id`).
+- Dado que cadastro uma renda recorrente com dia 5 e valor R$1.200, quando eu visito o mês de outubro (mesmo sem nunca ter aberto essa tela antes), então uma renda de R$1.200 aparece automaticamente com `referenceMonth` = outubro.
+- Dado uma renda recorrente com dia 31, quando o mês visitado tem menos de 31 dias (ex: fevereiro), então a renda é gerada no último dia daquele mês (ex: 28/02), sem erro.
+- Dado uma renda recorrente ativa, quando eu a desativo, então nenhuma nova ocorrência é gerada nos meses seguintes, mas as ocorrências já geradas em meses passados continuam visíveis.
+- Dado que uma renda recorrente já gerou a ocorrência do mês corrente, quando o backend processa novamente aquele mês, então a ocorrência não é duplicada (idempotência).
 
 ## Fora de escopo nesta fase
 

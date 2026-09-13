@@ -1,4 +1,4 @@
-# Controle Financeiro
+# Saldix (Controle Financeiro)
 
 Organizador financeiro pessoal (uso individual, single-user), inspirado no app "Multicap" (ver `docs/Multicap/` para transcript e screenshots de referência). Publicado na Vercel (frontend) + backend separado (Railway/Render) + Supabase (Postgres + Auth).
 
@@ -10,6 +10,11 @@ Organizador financeiro pessoal (uso individual, single-user), inspirado no app "
 - **Banco**: Supabase Postgres com RLS habilitado em todas as tabelas (filtro por `user_id`).
 - **Auth**: Supabase Auth, email/senha, usuário único criado manualmente — sem cadastro público.
 - **Gerenciador de pacotes**: pnpm com workspaces (`pnpm-workspace.yaml`).
+
+## Infraestrutura
+
+- **Repositório GitHub**: `github.com/fparmezani/saldix` (origin).
+- **Projeto Supabase**: `saldix` (ref `librvtmjrpymfxvtrsnv`, região `sa-east-1`, org "Fernando Parm3zani"). Integração GitHub↔Supabase (sync automático de migrations) ainda **não configurada** — planejada para a Fase 8, junto do deploy.
 
 ## Comandos úteis
 

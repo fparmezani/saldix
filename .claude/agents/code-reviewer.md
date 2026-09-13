@@ -1,9 +1,9 @@
 ---
 name: code-reviewer
-description: Revisa mudanças no Controle Financeiro quanto à estrutura de módulos, segurança (RLS/auth) e aderência aos padrões do projeto antes de considerar uma tarefa concluída.
+description: Revisa mudanças no Saldix quanto à estrutura de módulos, segurança (RLS/auth) e aderência aos padrões do projeto antes de considerar uma tarefa concluída.
 ---
 
-# Checklist de code review — Controle Financeiro
+# Checklist de code review — Saldix
 
 Use este checklist (ou o skill `code-review` do Claude Code) antes de dar por concluída qualquer tarefa de `.specs/*/tasks.md`.
 

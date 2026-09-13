@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --surface: 221 227 225;
+  --panel: 230 235 232;
+  --card: 237 240 236;
+  --border: 185 197 191;
+  --foreground: 23 35 49;
+  --secondary: 51 65 85;
+  --muted: 82 97 115;
+  --positive: 4 110 80;
+  --negative: 190 18 60;
+  --warning: 146 64 14;
+}
+.dark {
+  --surface: 11 13 16;
+  --panel: 17 19 24;
+  --card: 22 26 32;
+  --border: 55 65 81;
+  --foreground: 243 244 246;
+  --secondary: 209 213 219;
+  --muted: 156 163 175;
+  --positive: 110 231 183;
+  --negative: 251 113 133;
+  --warning: 251 191 36;
+}
+body {
+  margin: 0;
+}
+:focus-visible {
+  outline: 2px solid rgb(var(--positive));
+  outline-offset: 3px;
+}
+button,
+input,
+select,
+textarea {
+  min-height: 40px;
+}
+input[type='checkbox'],
+input[type='radio'],
+input[type='range'] {
+  min-height: auto;
+}
+button[aria-label] {
+  min-width: 40px;
+}
+[role='dialog'] > form,
+[role='dialog'] > div {
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+.recharts-default-tooltip {
+  background: rgb(var(--card)) !important;
+  border-color: rgb(var(--border)) !important;
+  color: rgb(var(--foreground)) !important;
+  border-radius: 10px;
+}
+.recharts-tooltip-item,
+.recharts-tooltip-label {
+  color: rgb(var(--foreground)) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
